@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Space PDF Summariser</title>
+    <style>
+        @font-face {
+        font-family: 'Product Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+        }
+        body{
+            font-family: Product Sans;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Team Space PDF Summariser</h1>
+    <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+</body>
+</html>
